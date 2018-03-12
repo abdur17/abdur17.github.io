@@ -1,0 +1,354 @@
+body{
+    margin: 0;
+}
+
+/*font faces*/
+@font-face{
+    font-family: 'Open Sans';
+    src: url('./../html/Open_Sans/OpenSans-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'Lora';
+    src: url('./../html/Lora/Lora-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'Quando';
+    src: url('./../html/Quando/Quando-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'Karma';
+    src: url('./../html/Karma/Karma-Regular.ttf');
+}
+
+/*styles for the header*/
+    /*styles for the top section*/
+header{
+    background-image: url('polygon-background.jpg');
+}
+
+header div{
+    background-color: inherit;
+    height:3in;
+    color: #ffffff;
+}
+
+header div h1{
+    margin: 0;
+    text-align: center;
+    padding-top: .8in;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    font-size: 3.5em;
+    font-family: 'Quando';
+}
+
+header div p{
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Lora';
+    font-style: italic;
+    font-weight: bold;
+}
+
+    /*styles for the nav bar*/
+
+header nav{
+    background-color: inherit;
+}
+
+header nav ul{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li{
+    display: inline-block;
+    width: 10%;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+
+    color: #ffffff;
+
+    font-size: 1em;
+    font-family: 'Open Sans';
+    letter-spacing: 1px;
+
+    display: block;
+    padding: 15px 5px 15px 5px;
+
+    transition-property: background-color, box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+
+}
+
+header nav ul li a:hover{
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: inset 0px 3px black;
+}
+
+@media screen and (max-width: 600px) {
+    header div h1{font-size: 2em;}
+    header div p{font-size: 1em;}
+    header nav ul{text-align:center;}
+    header nav ul li{display: inline;margin:auto;}
+}
+
+/*styles for the main content*/
+main{
+    height: auto;
+
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+    /*styles for profile*/
+main section{
+    padding-top: .5in;
+    padding-bottom: .5in;
+}
+
+main section #div1{
+    height: 5in;
+    width: 10in;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-left: 25%;
+    color: white;
+}
+
+main #div1 h2, main #div2 h2, main #div3 h2, main #div4 h2{
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 1.8em;
+    font-family: 'Quando';
+    letter-spacing: 1px;
+    padding-top: 20px;
+    padding-bottom: .8in;
+}
+
+table{
+    font-size: 1.3em;
+    font-family: 'Karma';
+}
+
+table th{text-align: right; padding-right: 40px;}
+table tr{line-height: .5in;}
+
+main section #div2{
+    height: 5in;
+    width: 10in;
+    margin-top: 1in;
+    margin-left: 25%;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+main .paras{
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Karma';
+    letter-spacing: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    section{margin:0; width: auto;}
+    main section #div1, main section #div2{
+        width: auto;
+        margin:auto;
+        font-size: .8em;
+        margin-top: .5in;
+    }
+}
+
+    /*styles for achievements*/
+main #div3{
+    width: 10in;
+    height: 6.5in;
+    margin-left: 25%;
+    font-family: 'Karma';
+    color: white;
+}
+
+main section #div3 table{
+    border: 1px solid black;
+}
+
+#div3 tr, #div3 td, #div3 th{
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#div3 p{
+    margin: 0;
+    padding-top: 40px;
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Karma';
+}
+
+@media screen and (max-width:600px){
+    main section #div3{width: auto;
+        margin: auto;
+        padding-bottom: .5in;
+        font-size: .8em;
+     }
+}
+
+    /*styes for experience*/
+main #div4{
+    width: 10in;
+    height: 8in;
+    margin-left: 25%;
+    font-family: 'Karma';
+    color: white;
+
+    text-align: center;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+main section ul li{
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width:600px){
+    main section ul li{padding-left: 5px; padding-right: 5px;}
+    main section #div4{width: auto; margin: auto; height: auto;}
+}
+    /*styles for favourite quotes*/
+main #Einstein, #Edison, #Tesla, #Newton{
+    padding-top: .7in;
+    height: auto; width: auto;
+
+}
+
+main .container{
+    padding-top: .5in;
+    margin-bottom: .5in;
+
+    background-color:#54B9D4;
+    color: white;
+
+    width: 6in;
+    height: 2in;
+
+    font-family: 'Karma';
+}
+
+main .container .quote-para{
+    text-align: center;
+    font-size: 1.3em;
+
+    padding-left: .5in;
+    padding-right: .5in;
+
+    position:relative;
+}
+
+main .container .cite-styl{
+    text-align: center;
+    font-weight: bold;
+}
+
+main #Newton{
+    padding-bottom: .2in;
+}
+
+@media screen and (max-width: 600px) {
+    main #Einstein, #Tesla, #Edison, #Newton {margin: auto;}
+    main .container .quote_para{font-size: 0.5em;}
+    main .container{width:auto; height: auto; margin-top: .3in; padding-top: .4in; padding-bottom: .2in;}
+}
+
+    /*styles for the contact*/
+main #logo-container{
+    height:5in;
+}
+
+#logo-container h2{
+    margin: 0;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.8em;
+    color: white;
+    font-family: 'Quando';
+}
+
+#logo-container .logo {
+    padding-top: 1in;
+    margin-left: 8%;
+}
+
+#logo-container .logo a img{
+    margin-right: 1.5in;
+}
+
+#logo-container p{
+    margin: 0;
+    padding-top: .5in;
+    padding-bottom: 10px;
+    text-align: center;
+    color:white;
+    font-size: 1.3em;
+    font-family: 'Karma';
+}
+
+@media screen and (max-width:600px){
+    main #logo-container{
+        height: auto;
+    }
+
+    #logo-container .logo {
+        width: auto;
+        margin: auto;
+        padding-left: 150px;
+
+    }
+    #logo-container .logo a img{
+        padding-bottom: 50px;
+    }
+
+    #logo-container p{
+        font-size: 1em;
+    }
+}
+
+/*styles for the footer*/
+footer{
+    height: 1in;
+    text-align: center;
+    padding-top: .5in;
+
+    font-weight: bold;
+    font-family: 'Lora';
+
+    color: white;
+
+    background-image: url('polygon-background.jpg');
+}
