@@ -125,7 +125,7 @@ main section #div1{
     width: 10in;
     border: 1px solid black;
     border-radius: 20px;
-    margin-left: 25%;
+	margin-left: 25%;
     color: white;
 }
 
@@ -152,7 +152,7 @@ main section #div2{
     height: 5in;
     width: 10in;
     margin-top: 1in;
-    margin-left: 25%;
+	margin-left: 25%;
     border-radius: 20px;
     border: 1px solid black;
 }
@@ -181,8 +181,8 @@ main .paras{
     /*styles for achievements*/
 main #div3{
     width: 10in;
-    height: 6.5in;
-    margin-left: 25%;
+    height: au;
+    margin-left: 25%; 
     font-family: 'Karma';
     color: white;
 }
@@ -209,7 +209,9 @@ main section #div3 table{
 }
 
 @media screen and (max-width:600px){
-    main section #div3{width: auto;
+	section{margin 0; height:auto; width:auto;}
+    main section #div3{
+		width: auto;
         margin: auto;
         padding-bottom: .5in;
         font-size: .8em;
@@ -281,7 +283,7 @@ main #Newton{
 }
 
 @media screen and (max-width: 600px) {
-    main #Einstein, #Tesla, #Edison, #Newton {margin: auto;}
+    main #Einstein, #Tesla, #Edison, #Newton {margin: auto; height:auto;}
     main .container .quote_para{font-size: 0.5em;}
     main .container{width:auto; height: auto; margin-top: .3in; padding-top: .4in; padding-bottom: .2in;}
 }
